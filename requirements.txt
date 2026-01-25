@@ -1,0 +1,5 @@
+pandas
+PySimpleGUI
+matplotlib
+openpyxl
+xlrd
