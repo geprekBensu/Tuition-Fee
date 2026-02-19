@@ -40,8 +40,9 @@ def detect_bank(path):
         if "USD" in t or "DOLLAR" in t or "US DOLLAR" in t:
             return "BNI_USD"
         return "BNI"
-    # MCM (some statements contain MCM or MANDIRI CORPORATE MARKETS-like markers)
-    if "MCM" in t or "MANDIRI" in t and "MCM" in t:
+    # MCM (some statements contain MCM or MANDIRI markers)
+    # accept either 'MCM' or 'MANDIRI' appearing in the text
+    if "MCM" in t or "MANDIRI" in t:
         return "MCM"
     # BRI
     if "BANK RAKYAT INDONESIA" in t or "BRI" in t:

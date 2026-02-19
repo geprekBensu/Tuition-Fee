@@ -100,7 +100,7 @@ def main():
             # clear previous figure
             if figure_agg:
                 try:
-                    figure_agg.get_tk_widget().forget()
+                    figure_agg.get_tk_widget().pack_forget()
                 except Exception:
                     pass
             fig, ax = plt.subplots(figsize=(5, 3))

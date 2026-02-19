@@ -3,3 +3,5 @@ PySimpleGUI
 matplotlib
 openpyxl
 xlrd
+feedparser
+requests
